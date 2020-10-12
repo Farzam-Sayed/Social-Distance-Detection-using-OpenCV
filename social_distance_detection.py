@@ -38,7 +38,7 @@ print("\nStreaming video using device...\n")
 if args['video']:
     cap = cv2.VideoCapture(args['video'])
 else:
-    cap = cv2.VideoCapture(-1)
+    cap = cv2.VideoCapture(0)
 
 
 frame_no = 0
